@@ -5,4 +5,4 @@ sample app with lot of tables rendering causing slowdown initially (try scrollin
 [Violation] 'requestAnimationFrame' handler took <N>ms
 ```
 
-Added a similar React component (wrapped in an Ember one) to compare performance. When comparing, make sure to use incognito mode so ember inspector or react dev tools do not rendering times.
+Added a similar React component (wrapped in an Ember one) to compare performance. When comparing, make sure to use incognito mode so ember inspector or react dev tools do not affect rendering times.
