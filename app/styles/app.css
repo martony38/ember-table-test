@@ -1,0 +1,20 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+header {
+  font-size: 2em;
+  font-family: sans-serif;
+  margin: 1em;
+}
+header > a {
+  text-decoration: none;
+  margin: 0 1em;
+}
+.ember {
+  color: #e24b31;
+}
+.react {
+  color: #61dafb;
+}

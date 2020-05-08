@@ -28,13 +28,13 @@ export default class TableTestComponent extends Component {
     const {
       columns,
       rows,
-      args: { tableId },
+      args: { tableId, timeout },
     } = this;
 
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve({ columns, rows });
-      }, tableId * 1000);
+      }, tableId * timeout);
     });
   }
 

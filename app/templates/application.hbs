@@ -1,6 +1,6 @@
-{{#each @model.tables as |table|}}
-  <TableTest @tableId={{table}} @tables={{this.tables}} />
-{{/each}}
-
+<header>
+  <LinkTo @route="ember" class="ember">Ember</LinkTo>
+  <LinkTo @route="react" class="react">React</LinkTo>
+</header>
 
 {{outlet}}

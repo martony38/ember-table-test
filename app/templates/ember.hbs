@@ -1,0 +1,5 @@
+{{#each @model.tables as |table|}}
+  <Table @timeout={{1000}} @tableId={{table}} @tables={{this.tables}} @react={{false}}/>
+{{/each}}
+
+{{outlet}}

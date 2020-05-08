@@ -1,0 +1,14 @@
+<div style="margin: 2em;">
+  {{#if this.getData.isRunning}}
+    <div>Table loading</div>
+  {{else}}
+    {{#if @react}}
+      <Grid @columns={{this.data.columns}} @rows={{this.data.rows}} />
+    {{else}}
+      <EmberTable style="height: 200px; width: 852px; background-color: #e24b31;" as |t|>
+        <t.head @columns={{this.data.columns}}></t.head>
+        <t.body @rows={{this.data.rows}} />
+      </EmberTable>
+    {{/if}}
+  {{/if}}
+</div>

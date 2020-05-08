@@ -1,8 +1,0 @@
-{{#if this.getData.isRunning}}
-  <div>Table loading</div>
-{{else}}
-  <EmberTable style="height: 200px; width: 50%; margin: 100px;" as |t|>
-    <t.head @columns={{this.data.columns}} />
-    <t.body @rows={{this.data.rows}} />
-  </EmberTable>
-{{/if}}
